@@ -9,6 +9,10 @@ public class BoxOfCandy
      * Returns false if there is no piece of candy in column col and returns true otherwise.
      * Precondition: col is a valid column index in box.
      */
+    public BoxOfCandy (Candy[][] box) {
+        this.box = box;
+    }
+
     public boolean moveCandyToFirstRow(int col)
     {
         if (box[0][col] != null) {
